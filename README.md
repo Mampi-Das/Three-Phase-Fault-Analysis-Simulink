@@ -199,9 +199,8 @@ Three-Phase-Fault-Analysis-Simulink/
 │   └── Simulink_model.png
 │
 └── README.md
-
----
 ```markdown
+---
 ## 👩‍💻 Author
 
 **Mampi Das**
