@@ -199,3 +199,19 @@ Three-Phase-Fault-Analysis-Simulink/
 │   └── Simulink_model.png
 │
 └── README.md
+## 👩‍💻 Author
+
+**Mampi Das**
+
+B.Tech Electrical Engineering  
+National Institute of Technology (NIT), Agartala
+
+---
+
+## ⭐ Note
+
+This project was developed for educational purposes to understand the behavior of a three-phase electrical power system under different fault conditions using MATLAB/Simulink.
+
+The work focuses on simulating and analyzing LL, LG, and LLLG faults by observing the corresponding voltage and current waveforms and studying the transient response of the system.
+
+The project does not implement an automatic protection or fault-detection relay; such features are identified as possible future enhancements.
