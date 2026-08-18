@@ -36,7 +36,7 @@ The simulation model consists of the following major blocks:
 - Three-Phase Voltage Source
 - Three-Phase Transformer
 - Parallel RLC Load
-- Three-Phase Circuit Breaker
+- Fault/Breaker Configuration
 - Voltage Measurement
 - Current Measurement
 - Demux
@@ -53,21 +53,21 @@ The simulation model consists of the following major blocks:
 | Fault Initiation Time | 0.1 s |
 | System | Three-Phase AC |
 | Load | Parallel RLC |
-| Fault Control | Circuit Breaker + Unit Step |
+| Fault Control | Unit Step |
 
 ---
 
 ## 🔬 Methodology
 
-The three-phase source supplies the electrical system through a transformer and connected parallel RLC load.
+The three-phase voltage source supplies the electrical system through a three-phase transformer and connected parallel RLC load.
 
 Voltage and current measurement blocks are used to obtain the corresponding electrical quantities.
 
 The measured three-phase signals are separated using a Demux block and displayed using Scope.
 
-Initially, the system operates under normal conditions. A Unit Step signal is used to control the circuit breaker and introduce the selected fault at 0.1 seconds.
+Initially, the system operates under normal conditions. A Unit Step signal is used to control the fault initiation at 0.1 seconds.
 
-The voltage and current waveforms before and after fault initiation are then analyzed.
+The voltage and current waveforms before and after fault initiation are then analyzed to study the transient response of the system.
 
 ### Normal Condition
 
@@ -75,7 +75,7 @@ Before the fault is introduced, the system operates under normal operating condi
 
 ### Fault Condition
 
-At 0.1 seconds, the circuit breaker introduces the selected fault.
+At 0.1 seconds, the selected fault condition is introduced into the system.
 
 The resulting changes in voltage and current are observed from the Scope outputs.
 
@@ -127,7 +127,7 @@ The voltage and current waveforms were recorded for each fault condition.
 
 #### Current Waveform
 
-![LL Fault Current](Results/LL_CurrentGraph.png)
+![LL Fault Current](Results/LL_currentGraph.png)
 
 ---
 
@@ -173,7 +173,7 @@ The simulation demonstrates the following general behavior:
 
 ## 🧩 Simulink Model
 
-The complete Simulink model contains the three-phase source, transformer, RLC load, circuit breaker, measurement blocks, Demux and Scope.
+The complete Simulink model contains the three-phase source, transformer, RLC load, fault configuration, measurement blocks, Demux and Scope.
 
 ![Simulink Model](Images/Simulink_model.png)
 
