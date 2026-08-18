@@ -201,7 +201,7 @@ Three-Phase-Fault-Analysis-Simulink/
 └── README.md
 
 ---
-
+```markdown
 ## 👩‍💻 Author
 
 **Mampi Das**
