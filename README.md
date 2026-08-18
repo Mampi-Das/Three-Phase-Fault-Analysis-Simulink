@@ -179,28 +179,7 @@ The complete Simulink model contains the three-phase source, transformer, RLC lo
 
 ---
 
-## 📁 Project Structure
 
-
-Three-Phase-Fault-Analysis-Simulink/
-│
-├── Simulink_Model/
-│   └── Three_Phase_Fault_Analysis.slx
-│
-├── Results/
-│   ├── LL_voltageGraph.png
-│   ├── LL_CurrentGraph.png
-│   ├── LG_Fault_voltage_graph.png
-│   ├── LG_Fault_current_graph.png
-│   ├── LLLG_voltageGraph.png
-│   └── LLLG_currentGraph.png
-│
-├── Images/
-│   └── Simulink_model.png
-│
-└── README.md
-
----
 ## 👩‍💻 Author
 
 **Mampi Das**
